@@ -46,3 +46,6 @@ get_prop(platform_app, pm_archiving_enabled_prop)
 # Access zram sysfs
 allow platform_app sysfs_zram:dir r_dir_perms;
 allow platform_app sysfs_zram:file r_file_perms;
+
+# Custom ROM Hide
+allow platform_app custom_rom_hide_data_file:file { create open read write getattr setattr unlink };
