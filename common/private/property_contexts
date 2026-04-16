@@ -19,11 +19,11 @@ ro.vendor.audio.dolby.surround.enable  u:object_r:exported_system_prop:s0
 # Custom legal URL
 ro.lineagelegal.url                    u:object_r:legal_url_prop:s0
 
-# Custom version (lunaris)
-ro.lunaris.device                      u:object_r:custom_version_prop:s0
-ro.lunaris.build.version               u:object_r:custom_version_prop:s0
-ro.lunaris.display.version             u:object_r:custom_version_prop:s0
-ro.lunaris.version                     u:object_r:custom_version_prop:s0
+# Custom version (alch3my)
+ro.alchemy.device                      u:object_r:custom_version_prop:s0
+ro.alch3my.build.version               u:object_r:custom_version_prop:s0
+ro.alch3my.display.version             u:object_r:custom_version_prop:s0
+ro.alch3my.version                     u:object_r:custom_version_prop:s0
 
 # Custom version (lineage)
 ro.lineage.device                      u:object_r:custom_version_prop:s0
