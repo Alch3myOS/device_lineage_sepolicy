@@ -20,18 +20,3 @@ get_prop(system_app, qemu_hw_prop)
 
 # Allow Columbus to set ApSensor property
 allow system_app system_prop:property_service set;
-
-# Custom ROM Hide
-allow system_app custom_rom_hide_data_file:file { create open read write getattr setattr unlink };
-
-# TrickyStore
-allow system_app trickystore_data_file:dir { create open read write add_name remove_name search getattr };
-allow system_app trickystore_data_file:file { create open read write getattr setattr unlink };
-
-# PlayIntegrityFix - AxionParts
-allow system_app pif_data_file:dir { create open read write add_name remove_name search getattr };
-allow system_app pif_data_file:file { create open read write getattr setattr unlink };
-
-# GameProps - AxionParts
-allow system_app gameprops_data_file:dir { create open read write add_name remove_name search getattr };
-allow system_app gameprops_data_file:file { create open read write getattr setattr unlink };
