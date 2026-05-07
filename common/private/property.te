@@ -1,3 +1,6 @@
+# Alch3myLabs Boot Animation Easter Egg
+system_public_prop(alch3my_easter_egg_prop)
+
 # ATV
 # used by mediashell
 product_internal_prop(odm_cast_prop)

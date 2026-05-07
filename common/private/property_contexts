@@ -1,3 +1,6 @@
+# Alch3myLabs Boot Animation Easter Egg
+sys.alch3my.easter_egg    u:object_r:alch3my_easter_egg_prop:s0
+
 # ATV
 # used by mediashell
 ro.odm.cast.ssid_suffix u:object_r:odm_cast_prop:s0
