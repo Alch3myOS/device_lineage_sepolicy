@@ -1,2 +1,4 @@
 # xtra-daemon control
 get_prop(vendor_init, xtra_control_prop)
+
+get_prop(vendor_init, alch3my_prop)
