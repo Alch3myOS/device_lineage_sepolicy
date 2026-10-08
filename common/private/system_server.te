@@ -9,7 +9,6 @@ add_service(system_server, ax_sandbox_service);
 # CachedAppOptimizer
 allow system_server audioserver_tmpfs:file rw_file_perms;
 allow system_server tmpfs:file rw_file_perms;
-allow system_server vndbinder_device:chr_file write;
 allow system_server zygote_tmpfs:file rw_file_perms;
 
 allow system_server shell:unix_stream_socket getopt;
@@ -55,6 +54,3 @@ add_service(system_server, game_space_service);
 # Sandbox
 allow system_server ax_sandbox_vault_file:dir create_dir_perms;
 allow system_server ax_sandbox_vault_file:file create_file_perms;
-
-# Let system server set vbmeta prop
-set_prop(system_server, bootloader_prop)
