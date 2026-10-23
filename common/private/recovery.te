@@ -13,6 +13,10 @@ allow recovery self:tcp_socket { create_socket_perms_no_ioctl listen accept };
 allow recovery self:vsock_socket { create_socket_perms_no_ioctl listen accept };
 get_prop(recovery, adbd_config_prop)
 
+# Enable ADB: turn off adb authorization and restart adbd
+set_prop(recovery, recovery_adb_prop)
+set_prop(recovery, ctl_adbd_prop)
+
 # Volume manager
 r_dir_file(recovery, sdcard_type)
 allow recovery block_device:dir create_dir_perms;

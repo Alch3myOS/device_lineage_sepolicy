@@ -1,2 +1,5 @@
 allow adbd adbroot:binder call;
 allow adbd adbroot_service:service_manager find;
+
+# Set by Enable ADB in recovery
+get_prop(adbd, recovery_adb_prop)
