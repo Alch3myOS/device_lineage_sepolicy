@@ -16,3 +16,6 @@ system_internal_prop(pif_prop)
 
 # Recovery update
 system_internal_prop(recovery_update_prop)
+
+# Recovery ADB authorization
+system_internal_prop(recovery_adb_prop)

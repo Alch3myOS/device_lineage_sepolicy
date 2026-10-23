@@ -48,6 +48,9 @@ persist.sys.spoof.                     u:object_r:custom_version_prop:s0
 persist.sys.pihooks.                   u:object_r:custom_version_prop:s0
 persist.sys.pixelprops.                u:object_r:custom_version_prop:s0
 
+# Recovery ADB authorization
+ro.adb.secure.recovery                 u:object_r:recovery_adb_prop:s0 exact bool
+
 # Recovery battery
 ro.recovery.batteryless                u:object_r:recovery_config_prop:s0 exact bool
 
